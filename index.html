@@ -35,31 +35,14 @@ a{color: cyan;}
   50%{filter: grayscale(50%);transform: scale(0.7);}
   100%{filter: grayscale(100%);transform: scale(1);}
 }
-    </style>
-    <script >
-function home(){      
-      document.getElementById("home").style.display = "block";
-      document.getElementById("home").style.animation = "main 1s"; 
-      document.getElementById("work_exp").style.display = "none"; 
-      document.getElementById("contact").style.display = "none"; 
-    }
-function work(){      
-      document.getElementById("home").style.display = "none"; 
-      document.getElementById("work_exp").style.display = "block";
-      document.getElementById("work_exp").style.animation = "main 1s";  
-      document.getElementById("contact").style.display = "none"; 
-    }
-function contact(){      
-      document.getElementById("home").style.display = "none"; 
-      document.getElementById("work_exp").style.display = "none"; 
-      document.getElementById("contact").style.display = "block";
-      document.getElementById("contact")style.animation = "main 1s"; 
-    }
+@keyframes animate{
+  0%{margin-left: 100%;}
+  100%{margin-left: 0%;}
 
-    </script>
+    </style>
   </head>
   <body>
-<div class="container">
+<div class="container" >
   <center>
   <nav style="top: 10px">
     <a href="javascript:home()" class="link" style="color: cyan;">Home </a>
@@ -155,7 +138,7 @@ Builders
 
 <!-- -----------------------------contact us ------- -->
 <div class="container" id="contact" style="display: none;">
-  <div class="custom_card" >
+  <div class="custom_card" style="height: auto;width: auto;">
     <div class="row" style="display: inline;"><center><h1 class="content_text"><i>Don`t Be a Stranger , Lets Talk</i></h1></center></div>
     <footer class="page-footer font-small pt-4">
 
@@ -233,7 +216,27 @@ Builders
 <br>
 </div>
 
-
+    <script >
+     
+function home(){      
+      document.getElementById("home").style.display = "block";
+      document.getElementById("home").style.animation = "animate 1s"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "none"; 
+    }
+function work(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "block";
+      document.getElementById("work_exp").style.animation = "animate 1s";  
+      document.getElementById("contact").style.display = "none"; 
+    }
+function contact(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "block";
+      document.getElementById("contact").style.animation = "animate 1s";
+    }
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
