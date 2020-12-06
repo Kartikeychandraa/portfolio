@@ -1,0 +1,45 @@
+body{
+	background-color: #f5d742;
+	font-family: 'Roboto';
+}
+
+.card{
+	width: 50vh;
+	height: 80vh;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: scroll;
+}
+.image{
+	width: 25vh;
+	height: 25vh;
+	border-radius: 50%;
+	display: block;
+}
+.email{
+	color: #575757;
+}
+.link{
+	color:  #575757;
+}
+.scroll {
+  width: 20px;
+  height: 200px;
+  overflow: auto;
+}
+.scroll4::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.scroll4::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.scroll4::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}

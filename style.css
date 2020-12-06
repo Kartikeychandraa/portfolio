@@ -1,6 +1,7 @@
 .link{
         font-style: italic;
         font-size:25px;
+        color: cyan;
       }
       .link:hover{
         background-color: black;
@@ -28,12 +29,7 @@ color: cyan;
 body{
      background-color: #171717;
      transition: 0.5s;
-     animation : main 2s;
            } 
-@keyframes main{
-	0%{margin-top: 100%;}
-	100%{margin-top: 0%;}
-
 .content{
   margin-top: 15%;
 }

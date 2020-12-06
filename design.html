@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="icon" href="portfolio.svg" type="image/gif">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Kartikey Chandra</title>
+    <style type="text/css">
+      .portfolio_img{
+border-radius: 20%;
+}
+.portfolio_img:hover{
+   filter: grayscale(100%);
+   transform: scale(1.5); 
+   transition: 2s;
+
+}
+.content_text:hover{
+  color: white;
+  transition: 0.5s;
+}
+a{color: cyan;}
+.work_exp_img:hover
+{
+   animation: animate_img 2s;
+   animation-fill-mode: forwards;
+}
+@keyframes animate_img{
+  0%{filter: grayscale(0%);transform: scale(1);}
+  50%{filter: grayscale(50%);transform: scale(0.7);}
+  100%{filter: grayscale(100%);transform: scale(1);}
+}
+@keyframes animate{
+  0%{margin-left: 100%;}
+  100%{margin-left: 0%;}
+.pointer{
+cursor: pointer;
+}
+    </style>
+  </head>
+  <body id="body">
+    <div class="loader">
+      <div class="spin">
+        
+      </div>
+    </div>
+<div class="container pointer">
+  <center>
+  <nav style="top: 10px">
+    <a href="javascript:home()" class="link" style="color: cyan;">Home </a>
+    <a href="javascript:work()" class="link" style="color: cyan;">What I Do </a>
+    <a href="javascript:contact()" class="link" style="color: cyan;">Contact </a>
+    <a href="index.html" class="link" style="color: cyan;">Compact view</a>
+  </nav>
+  </center>
+</div>
+<!-- ----------------------------------------------nav end -->
+<br>
+<!-- -----------------------------------------------------home--- -->
+<div class="container" id="home">
+  <div class="custom_card" >
+    <div class="row content" style="margin-top: 13%">
+    <div class="col-md-6"><center><img src="profile.jpg" class="portfolio_img"/></center></div>
+    <div class="col-md-6"><center><h1><i class="content_text">KARTIKEY CHANDRA</i></h1>
+      <h4><i class="content_text">Final Year CSE Undergrad</i></h4>
+      <h5><i class="content_text">Web Developer</i></h5>
+    </center>
+    </div>
+    </div>
+    </div> 
+    <br>
+</div>
+<!-- ---------------------------------------------work experience-- -->
+<div class="container" id="work_exp" style="display: none;">
+  <div class="custom_card" style="width: auto;height: auto;">
+  <div class="card-group">
+
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="sankalp.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="SANKALP SOFT"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">SANKALP SOFT</h5>
+      <p class="card-text content_text">Successfully completed full
+stack development internship at
+Sankalp Soft Solutions
+</p>
+    </div>
+  </div>
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img" src="sbbuilder.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="SB BUILDERS"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">SB BUILDIERS</h5>
+      <p class="card-text content_text">Successfully completed backend
+development internship at Smart
+Builders
+</p>
+
+    </div>
+  </div>
+</div>
+    </div> 
+    <br>
+    <!-- ----------------------------projects---------- -->
+     <div class="custom_card" style="width: auto;height: auto;">
+  <div class="card-group">
+
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="complaints.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="COMPLAINT BOARD"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">COMPLAINT BOARD</h5>
+      <p class="card-text content_text">Successfully completed full
+stack development internship at
+Sankalp Soft Solutions
+</p>
+    </div>
+  </div>
+   <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="connecting_juet.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="CONNECTING JUET"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">CONNECTING JUET</h5>
+      <p class="card-text content_text">Successfully completed full
+stack development internship at
+Sankalp Soft Solutions
+</p>
+    </div>
+  </div>
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img" src="blackjack.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="BLACKJACK"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">BLACKJACK</h5>
+      <p class="card-text content_text">Successfully completed backend
+development internship at Smart
+Builders
+</p>
+
+    </div>
+  </div>
+</div>
+    </div> 
+    <br>
+</div>
+
+<!-- -----------------------------contact us ------- -->
+<div class="container" id="contact" style="display: none;">
+  <div class="custom_card" style="height: auto;width: auto;">
+    <div class="row" style="display: inline;"><center><h1 class="content_text"><i>Don`t Be a Stranger , Lets Talk</i></h1></center></div>
+    <footer class="page-footer font-small pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase content_text" >About Us</h5>
+       <p class="content_text"><img src="gps.png"  width="24px" height="30px" > House No.14 New Azad Nagar ,Kalyanpur ,kanpur</p>
+       <p class="content_text"><img src="phone.png" width="24px" height="24px" >+91 7525947775</p>
+<p class="content_text">  <img src="mail.png" width="30px" height="30px"> kartikeychandraa@gmail.com</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase content_text" >Usefull links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+           <a href="https://www.facebook.com/kartikey.chandra.5"><img src="facebook.png" width="30px" height="30px"> Facebook</a>
+          </li>
+          <li>
+            <a href="https://github.com/Kartikeychandraa"><img src="github.png" width="30px" height="30px">Github</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase content_text">LOCATION</h5>
+
+        <ul class="list-unstyled">
+          <li>
+         <!-- ----------------------------------------------------modal location -->
+         <button type="button" data-toggle="modal" data-target="#exampleModalCenter" style="border: 0px;background-color: #171717">
+ <img src="location.png" width="30px" height="30px">
+</button>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background-color: #171717">
+      <div class="modal-body">
+     <img src="locate_gif.gif" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+  </div>
+</div>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3 content_text" >Copyright <abbr title="Copyright to bootstrap">&copy</abbr> 2011-2020
+    <a href="https://getbootstrap.com/">  The Bootstrap Authors</a>
+  </div></footer>
+  </div>
+    </div>
+<br>
+</div>
+
+    <script >
+     
+function home(){      
+      document.getElementById("home").style.display = "block";
+      document.getElementById("home").style.animation = "animate 1s"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "none"; 
+    }
+function work(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "block";
+      document.getElementById("work_exp").style.animation = "animate 1s";  
+      document.getElementById("contact").style.display = "none"; 
+    }
+function contact(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "block";
+      document.getElementById("contact").style.animation = "animate 1s";
+    }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
