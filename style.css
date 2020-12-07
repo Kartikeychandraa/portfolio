@@ -2,15 +2,13 @@
         font-style: italic;
         font-size:25px;
         color: cyan;
+        border-right: 1px solid cyan;
+        margin-right: 5px;
       }
-      .link:hover{
-        background-color: black;
-        transition: 0.5s;
-        text-decoration: none;
-        border: 5px solid white;
-        padding: 10px 20px;
-        border-radius: 25px;
-        display: inline-block;
+.link:hover{
+       text-decoration: none;
+        color: white;
+        transition: 1s;
       }
 .contact_locate{
 	border-radius: 50%;
@@ -33,4 +31,3 @@ body{
 .content{
   margin-top: 15%;
 }
-
