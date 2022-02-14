@@ -1,0 +1,59 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.navbar ul{
+  list-style-type : none;
+  padding-left: 0px;
+}
+.navbar ul li {
+  display: inline-block;
+  transition : 1s;
+  font-size: x-large;
+}
+.navbar ul li a {
+   text-decoration: none;
+  color: white;
+}
+.full_page{
+  height:100vh;
+}
+
+.first_page{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    margin: 0;
+    background-image: url('../images/first-page-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #767676;
+    color: #cdcdcd;
+}
+.first_page h1{
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  font-style: italic;
+}
+.first_page p{
+      font-style: italic;
+  
+}
+.portfolio_img {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    display: inline-block;
+}
