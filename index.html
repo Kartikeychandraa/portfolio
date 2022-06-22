@@ -6,57 +6,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="icon" href="portfolio.svg" type="image/gif">
-    <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="icon" href="portfolio.svg" type="image/gif">
+      <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Kartikey Chandra</title>
-  </head>
-  <body >
-    <div class="container">
-<div class="card" >
-  <div class="card-body">
-    <center><img src="./images/profile.jpg" class="image"></center>
-<center><h2>Kartikey Chandra</h2></center>
-<h5>Project Engineer in Wipro</h5>
-<p class="email">&#128231; kartikeychandraa@gmail.com</p>
-<p>&#128225;<a href="https://in.linkedin.com/in/kartikey-chandra-40723816b?trk=people-guest_people_search-card" class="link">  LinkedIn</a>
-/<a href="https://www.github.com/kartikeychandraa" class="link">Github</a></p>
-<p>&#128400; +91 7525947775</p>
-<br>
-<h3>&#128084; Work Experience</h3>
+    <style type="text/css">
+      .portfolio_img{
+border-radius: 20%;
+}
+.portfolio_img:hover{
+   filter: grayscale(100%); 
+   transition: 1s;
+   border: 2px solid white;
 
-<ul>
-    <li>Project Engineer in Wipro</li>
-    <li>Full stack developer in Sankalp Soft</li>
-    <li>Backend developer in SB Builders</li>
-    <li>UX/UI Coordinator in College Technical club (Mozilla Pheonix club)</li>
-</ul>
-<h3>&#128173; Projects</h3>
-<p>I have also created several projects to enance my technical skills</p>
-<ul>
-   <li><a href="https://https://github.com/Kartikeychandraa/Ask-and-Solve" class="link">ASK & SOLVE</a> : Ask & Solve is a webapp that help users to take their questions to global world and users also answer these questions . Its like asking and helping process .where user can explore their skillset fully monitor by admin.</li>
-    <li><a href="https://github.com/Kartikeychandraa/Complaint_Board" class="link">Complaint Board</a> : It is a new way to generate complaints track their status , traditional methods where too broken and much paper consuming</li>
-    <li><a href="https://github.com/Kartikeychandraa/Connecting-JUET" class="link">Connecting-Juet</a> :I was Team Lead of our project where i know my team members strength so i divided work as per skills of our team members i was good in front end development that gave me strength to complete my project i managed my team on D-Day or the Day of representation</li>
-</ul>
-<h3>&#127969; About Me</h3>
-<p> Hey! I'm Kartikey 👋 , currently working in Wipro Corporation as a Project Engineer, I have completed my Btech Graduation from Jaypee University Of Engineering and Technology, Having 6 weeks of work experience as an intern in the field of full stack developer and backend developer with NodeJS, Bootstrap, CSS3, HTML, JS. I was a UX/UI coordinator in the college technical club (Mozilla Pheniox club) that gave me advancement in my frontend development skills.I have experience building applications from scratch, working on projects with tight deadlines, innovating ideas, designing features, simplifying processes, gowning modules, optimizing codes, and collaborating with teams. In addition to the above, I strongly believe in learning and sharing my knowledge with the team.
-<ul><li>  quick learner</li> 
-<li>an individual committed to team success</li>
-<li>the ability to work under high pressure and solve problems efficiently</li>
-<li>team player</li>
-</ul>
-I'm looking forward to opportunities that will let me explore and test my abilities in the field of products and innovations. </p>
-  </div>
+}
+.content_text:hover{
+  color: white;
+  transition: 0.5s;
+}
+a{color: cyan;}
+.work_exp_img:hover
+{
+   animation: animate_img 2s;
+   animation-fill-mode: forwards;
+}
+@keyframes animate_img{
+  0%{filter: grayscale(0%);transform: scale(1);}
+  50%{filter: grayscale(50%);transform: scale(0.7);}
+  100%{filter: grayscale(100%);transform: scale(1);}
+}
+@keyframes animate{
+  0%{margin-left: 100%;}
+  100%{margin-left: 0%;}
+.pointer{
+cursor: pointer;
+}
+    </style>
+  </head>
+  <body id="body">
+<div class="container pointer">
+  <center>
+  <nav style="top: 10px">
+    <a href="javascript:home()" class="link" style="color: cyan;">Home </a>
+    <a href="javascript:work()" class="link" style="color: cyan;">What I Do </a>
+    <a href="javascript:contact()" class="link" style="color: cyan;">Contact </a>
+<!--     <a href="index.html" style="font-style: italic;
+        font-size:25px;
+        color: cyan; text-decoration: none;">Compact view</a> -->
+  </nav>
+  </center>
+  <hr style="color: cyan;background-color: cyan;">
 </div>
-<footer>
-    <p style="color: grey;">Another Version of Porfolio available here: <a href="design.html" style="color: grey;">click here</a></p>
-</footer>
+<!-- ----------------------------------------------nav end -->
+
+<br>
+<!-- -----------------------------------------------------home--- -->
+<div class="container" id="home">
+  <div class="custom_card" >
+    <div class="row content" style="margin-top: 13%">
+    <div class="col-md-6"><center><img src="./images/profile.jpg" class="portfolio_img"/></center></div>
+    <div class="col-md-6"><center><h1><i class="content_text">KARTIKEY CHANDRA</i></h1>
+      <h4><i class="content_text">Final Year CSE Undergrad</i></h4>
+      <h5><i class="content_text">Web Developer</i></h5>
+    </center>
+    </div>
+    </div>
+    </div> 
+    <br>
+</div>
+<!-- ---------------------------------------------work experience-- -->
+<div class="container" id="work_exp" style="display: none;">
+  <div class="custom_card" style="width: auto;height: auto;">
+  <div class="card-group">
+<div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="https://cdn.theorg.com/7f4beb55-9f51-4bd8-abf0-b253610ea653_thumb.png" style="height: 100%;width: 50%;border-radius: 50%;" alt="Wipro"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">WIPRO</h5>
+      <p class="card-text content_text">
+  data operations , using apigee google tool for server management , monitor traffic
+flow, api deployment in server, root cause analysis, server upgrade , Apigee upgrade
+
+        
+</p>
+    </div>
+  </div>
+
+
+
+
+
+
+    
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="./images/sankalp.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="SANKALP SOFT"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">SANKALP SOFT</h5>
+      <p class="card-text content_text">Successfully completed full
+stack development internship at
+Sankalp Soft Solutions
+</p>
+    </div>
+  </div>
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img" src="./images/sbbuilder.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="SB BUILDERS"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">SB BUILDIERS</h5>
+      <p class="card-text content_text">Successfully completed backend
+development internship at Smart
+Builders
+</p>
 
     </div>
+  </div>
+</div>
+    </div> 
+    <br>
+    <!-- ----------------------------projects---------- -->
+     <div class="custom_card" style="width: auto;height: auto;">
+  <div class="card-group">
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="https://static.vecteezy.com/system/resources/thumbnails/003/504/822/small/development-solution-thin-line-icon-gear-in-hand-innovation-logo-illustration-free-vector.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="COMPLAINT BOARD"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">ASK & SOLVE</h5>
+      <p class="card-text content_text">Ask & Solve is a webapp that help users to take their questions to global world and users also answer these questions . Its like asking and helping process .where user can explore their skillset fully monitor by admin.
+Used nodejs ,mongodb in backend . html , vanila js and css for styling .
+Used some npm modules like expressjs , passport js ,ejs , express sessions , bycrypt, body parser.
+</p>
+    </div>
+  </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+  <div class="card" style="background-color: #171717">
+    <center><img class="card-img-top work_exp_img"  src="./images/complaints.jpg" style="height: 100%;width: 50%;border-radius: 50%;" alt="COMPLAINT BOARD"></center>
+    <div class="card-body">
+      <h5 class="card-title content_text">COMPLAINT BOARD</h5>
+      <p class="card-text content_text">Developed a complaint management website from scratch .
+Used Html, css , bootstrap , js for frontend.
+Used nodejs, mongoose in backend
+Used some npm modules like expressjs , passport js ,ejs , express sessions , bycrypt, body parser.
+</p>
+    </div>
+  </div>
+  
+</div>
+    </div> 
+    <br>
+</div>
+
+<!-- -----------------------------contact us ------- -->
+<div class="container" id="contact" style="display: none;">
+  <div class="custom_card" style="height: auto;width: auto;">
+    <div class="row" style="display: inline;"><center><h1 class="content_text"><i>Don`t Be a Stranger , Lets Talk</i></h1></center></div>
+    <footer class="page-footer font-small pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase content_text" >About Us</h5>
+       <p class="content_text"><img src="./images/gps.png"  width="24px" height="30px" > House No.14 New Azad Nagar ,Kalyanpur ,kanpur</p>
+       <p class="content_text"><img src="./images/phone.png" width="24px" height="24px" >+91 7525947775</p>
+<p class="content_text">  <img src="./images/mail.png" width="30px" height="30px"> kartikeychandraa@gmail.com</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase content_text" >Usefull links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+           <a href="https://www.facebook.com/kartikey.chandra.5"><img src="./images/facebook.png" width="30px" height="30px"> Facebook</a>
+          </li>
+          <li>
+            <a href="https://github.com/Kartikeychandraa"><img src="./images/github.png" width="30px" height="30px">Github</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase content_text">LOCATION</h5>
+
+        <ul class="list-unstyled">
+          <li>
+         <!-- ----------------------------------------------------modal location -->
+         <button type="button" data-toggle="modal" data-target="#exampleModalCenter" style="border: 0px;background-color: #171717">
+ <img src="./images/location.png" width="30px" height="30px">
+</button>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background-color: #171717">
+      <div class="modal-body">
+     <img src="./images/locate_gif.gif" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+  </div>
+</div>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3 content_text" >Copyright <abbr title="Copyright to bootstrap">&copy</abbr> 2011-2020
+    <a href="https://getbootstrap.com/">  The Bootstrap Authors</a>
+  </div></footer>
+  </div>
+    </div>
+<br>
+</div>
+
+    <script >
+     
+function home(){      
+      document.getElementById("home").style.display = "block";
+      document.getElementById("home").style.animation = "animate 1s"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "none"; 
+    }
+function work(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "block";
+      document.getElementById("work_exp").style.animation = "animate 1s";  
+      document.getElementById("contact").style.display = "none"; 
+    }
+function contact(){      
+      document.getElementById("home").style.display = "none"; 
+      document.getElementById("work_exp").style.display = "none"; 
+      document.getElementById("contact").style.display = "block";
+      document.getElementById("contact").style.animation = "animate 1s";
+    }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
